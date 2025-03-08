@@ -95,4 +95,18 @@ body {
     transform-origin: top;
     z-index:4;
   }
+
+#flap:checked + .flap {
+  transform: rotateX(180deg);
+}
+
+#flap:checked ~ .card-front {
+  z-index:7;
+}
+
+#flap:checked ~ .card {
+  z-index:4;
+  transform: translateY(-60px);
+}
+
   
